@@ -79,7 +79,7 @@ import androidx.media3.exoplayer.ima.ImaAdsLoader;
 import androidx.media3.exoplayer.mediacodec.MediaCodecInfo;
 import androidx.media3.exoplayer.mediacodec.MediaCodecUtil;
 import androidx.media3.exoplayer.rtsp.RtspMediaSource;
-import androidx.media3.exoplayer.srt.srtMediaSource;
+import androidx.media3.exoplayer.srt.SrtMediaSource;
 import androidx.media3.exoplayer.smoothstreaming.DefaultSsChunkSource;
 import androidx.media3.exoplayer.smoothstreaming.SsMediaSource;
 import androidx.media3.exoplayer.source.ClippingMediaSource;
