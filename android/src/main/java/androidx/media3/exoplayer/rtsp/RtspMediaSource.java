@@ -23,7 +23,7 @@ public class RtspMediaSource {
 
         @Override
         public int[] getSupportedTypes() {
-            return new int[0];
+            return new int[CONTENT_TYPE_OTHER];
         }
 
         @Override

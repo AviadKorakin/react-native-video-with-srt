@@ -79,6 +79,7 @@ import androidx.media3.exoplayer.ima.ImaAdsLoader;
 import androidx.media3.exoplayer.mediacodec.MediaCodecInfo;
 import androidx.media3.exoplayer.mediacodec.MediaCodecUtil;
 import androidx.media3.exoplayer.rtsp.RtspMediaSource;
+import androidx.media3.exoplayer.srt.srtMediaSource;
 import androidx.media3.exoplayer.smoothstreaming.DefaultSsChunkSource;
 import androidx.media3.exoplayer.smoothstreaming.SsMediaSource;
 import androidx.media3.exoplayer.source.ClippingMediaSource;
@@ -1116,7 +1117,11 @@ public class ReactExoplayerView extends FrameLayout implements
         int type;
         if ("rtsp".equals(overrideExtension)) {
             type = CONTENT_TYPE_RTSP;
-        } else {
+        }
+        else if("srt".equals(overrideExtension){
+            type = CONTENT_TYPE_OTHER;
+        }
+                else {
             type = Util.inferContentType(!TextUtils.isEmpty(overrideExtension) ? "." + overrideExtension
                     : uri.getLastPathSegment());
         }
@@ -1192,7 +1197,9 @@ public class ReactExoplayerView extends FrameLayout implements
                 ).setAllowChunklessPreparation(source.getTextTracksAllowChunklessPreparation());
                 break;
             case CONTENT_TYPE_OTHER:
-                if ("asset".equals(uri.getScheme())) {
+                if ("srt".equals(overrideExtension)) {
+                    mediaSourceFactory = new SrtMediaSource.Factory();
+                } else if ("asset".equals(uri.getScheme())) {
                     try {
                         DataSource.Factory assetDataSourceFactory = DataSourceUtil.buildAssetDataSourceFactory(themedReactContext, uri);
                         mediaSourceFactory = new ProgressiveMediaSource.Factory(assetDataSourceFactory);
