@@ -1,4 +1,4 @@
-package com.srtplayer.player
+package androidx.media3.exoplayer.srt;
 import android.net.Uri
 import android.util.Log
 import androidx.annotation.OptIn

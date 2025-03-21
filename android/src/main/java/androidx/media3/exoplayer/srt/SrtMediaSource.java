@@ -1,4 +1,4 @@
-package com.srtplayer.player;
+package androidx.media3.exoplayer.srt;
 
 import static androidx.media3.common.C.CONTENT_TYPE_OTHER;
 

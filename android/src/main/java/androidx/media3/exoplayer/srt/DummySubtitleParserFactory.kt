@@ -1,4 +1,4 @@
-
+package androidx.media3.exoplayer.srt;
 
 import androidx.media3.common.Format
 import androidx.media3.common.text.Cue

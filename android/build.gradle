@@ -315,13 +315,3 @@ dependencies {
         implementation "androidx.media3:media3-common:$media3_version"
     }
 }
-// Add this at the end of the file
-tasks.withType(JavaCompile) {
-    options.compilerArgs += ['-Xlint:-unchecked', '-Xlint:-deprecation']
-}
-
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
-    kotlinOptions {
-        freeCompilerArgs += ["-Xlint:-unchecked", "-Xlint:-deprecation"]
-    }
-}
