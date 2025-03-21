@@ -1118,7 +1118,7 @@ public class ReactExoplayerView extends FrameLayout implements
         if ("rtsp".equals(overrideExtension)) {
             type = CONTENT_TYPE_RTSP;
         }
-        else if("srt".equals(overrideExtension){
+        else if("srt".equals(overrideExtension)){
             type = CONTENT_TYPE_OTHER;
         }
                 else {
