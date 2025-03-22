@@ -5,6 +5,7 @@ import androidx.media3.common.text.Cue
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.extractor.text.CuesWithTiming
 import androidx.media3.extractor.text.SubtitleParser
+
 @UnstableApi
 class DummySubtitleParserFactory : SubtitleParser.Factory {
     override fun supportsFormat(format: Format): Boolean {
