@@ -1,6 +1,5 @@
 package androidx.media3.exoplayer.srt;
 
-import androidx.media3.common.C.CONTENT_TYPE_OTHER;
 
 import androidx.annotation.OptIn;
 import androidx.media3.common.MediaItem;
@@ -59,7 +58,7 @@ public class SrtMediaSource {
         public int[] getSupportedTypes() {
             // We say it's for CONTENT_TYPE_OTHER, so that ExoPlayer knows
             // when to use this Factory.
-            return new int[]{CONTENT_TYPE_OTHER};
+            return new int[4];
         }
 
         /**

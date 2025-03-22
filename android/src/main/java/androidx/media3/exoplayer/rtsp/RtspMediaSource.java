@@ -4,7 +4,6 @@ import androidx.media3.common.MediaItem;
 import androidx.media3.exoplayer.drm.DrmSessionManagerProvider;
 import androidx.media3.exoplayer.source.MediaSource;
 import androidx.media3.exoplayer.upstream.LoadErrorHandlingPolicy;
-import androidx.media3.common.C.CONTENT_TYPE_OTHER;
 
 public class RtspMediaSource {
     public RtspMediaSource() {
@@ -24,7 +23,7 @@ public class RtspMediaSource {
 
         @Override
         public int[] getSupportedTypes() {
-            return new int[CONTENT_TYPE_OTHER];
+            return new int[4];
         }
 
         @Override
