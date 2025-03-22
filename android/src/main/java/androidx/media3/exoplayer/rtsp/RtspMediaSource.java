@@ -4,6 +4,7 @@ import androidx.media3.common.MediaItem;
 import androidx.media3.exoplayer.drm.DrmSessionManagerProvider;
 import androidx.media3.exoplayer.source.MediaSource;
 import androidx.media3.exoplayer.upstream.LoadErrorHandlingPolicy;
+import androidx.media3.common.C.CONTENT_TYPE_OTHER;
 
 public class RtspMediaSource {
     public RtspMediaSource() {

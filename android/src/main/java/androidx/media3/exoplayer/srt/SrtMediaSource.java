@@ -1,6 +1,6 @@
 package androidx.media3.exoplayer.srt;
 
-import static androidx.media3.common.C.CONTENT_TYPE_OTHER;
+import androidx.media3.common.C.CONTENT_TYPE_OTHER;
 
 import androidx.annotation.OptIn;
 import androidx.media3.common.MediaItem;
